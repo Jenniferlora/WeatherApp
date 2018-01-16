@@ -64,6 +64,8 @@ http://api.openweathermap.org/data/2.5/weather?q=[ZIP CODE GOES HERE],us?units=i
     - Look into the [javascript date object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) and change the background color based on the time of day.
 - Look into [Font Awesome](http://fontawesome.io/) and add icons based on the weather.
 
-## Submission
+## Homework Submission:
 
-Homework is due by **11:00 Sunday!** Remember to work with each other and go to TAs when you need it, but follow the [guidelines](https://git.generalassemb.ly/wdi-nyc-8-28/Course-Information/blob/master/how-to-queue-with-TAs.md) for queuing. Follow the [rules for homework submission](https://git.generalassemb.ly/wdi-nyc-8-28/Course-Information/blob/master/homework.md) for creating your pull request to submit the homework.
+* Homework is due at **11PM** tonight!
+* [Follow these instructions to submit your assignment](https://git.generalassemb.ly/wdi-jackalope/jackalope-students/blob/master/HOMEWORK.md)
+* [If you need help with your homework, check out the Student Resource Center!](https://git.generalassemb.ly/wdi-jackalope/jackalope-students/blob/master/SRC.md)

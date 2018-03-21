@@ -1,8 +1,9 @@
 $(function() {
-	console.log('key:7ea8ce2fca75f0992d145322b6996de9');
-	$('#submit').on('click', function(event) {
-		var input = $('#zipcode').val();
+	console.log("key:7ea8ce2fca75f0992d145322b6996de9");
+	$("#submit").on("click", function(event) {
+		var input = $("#zipcode").val();
 		makeCall(input);
+		$('.thelist').remove();
 	});
 
 	function makeCall(zipcode) {
@@ -12,7 +13,7 @@ $(function() {
 				success: function(data) {
 					console.log(data);
 					getData(data);
-				},
+				}
 			}
 		);
 	}
@@ -46,27 +47,27 @@ $(function() {
 
 	function appendToDom(city, currentTemp, description, minTemp, maxTemp) {
 		var params = [city, currentTemp, description, minTemp, maxTemp];
-		var result = document.querySelector('#result');
+		var result = document.querySelector("#result");
 
-		var list = document.createElement('ul');
-		list.classList.add('thelist');
+		var list = document.createElement("ul");
+		list.classList.add("thelist");
 		result.appendChild(list);
 
 		params.forEach(function(each) {
-			var newDiv = document.createElement('li');
+			var newDiv = document.createElement("li");
 			newDiv.textContent = each;
-			newDiv.style.listStyleType = 'none';
+			newDiv.style.listStyleType = "none";
 			list.appendChild(newDiv);
 		});
 	}
 
 	function appendMore(latitude, longitude, humidity, windspeed) {
 		var moreParams = [latitude, longitude, humidity, windspeed];
-		var thelist = document.querySelector('.thelist');
+		var thelist = document.querySelector(".thelist");
 		moreParams.forEach(function(each) {
-			var newDiv = document.createElement('li');
+			var newDiv = document.createElement("li");
 			newDiv.textContent = each;
-			newDiv.style.listStyleType = 'none';
+			newDiv.style.listStyleType = "none";
 			thelist.appendChild(newDiv);
 		});
 	}
